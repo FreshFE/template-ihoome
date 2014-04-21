@@ -1,3 +1,20 @@
 .widget {
 	margin-bottom: 20px;
 }
+
+.widget-list-nav {
+	margin-bottom: 0;
+	> li {
+		border-top: solid 1px #eee;
+		&:first-child {
+			border-top: none;
+		}
+	}
+	> li > a {
+		color: $gray;
+		padding: 7px 14px;
+	}
+	> .active > a {
+
+	}
+}
