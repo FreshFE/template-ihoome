@@ -40,7 +40,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @green;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -87,26 +87,26 @@
 // Buttons
 // -------------------------
 @btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBackgroundHighlight:            darken(@btnBackground, 3%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @green;
+@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 1%);
 
 @btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackgroundHighlight:        darken(@btnInfoBackground, 1%);
 
-@btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     #51a351;
+@btnSuccessBackground:              @green;
+@btnSuccessBackgroundHighlight:     darken(@btnSuccessBackground, 1%);
 
-@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackground:              lighten(@orange, 3%);
 @btnWarningBackgroundHighlight:     @orange;
 
 @btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
+@btnDangerBackgroundHighlight:      darken(@btnDangerBackground, 3%);
 
 @btnInverseBackground:              #444;
-@btnInverseBackgroundHighlight:     @grayDarker;
+@btnInverseBackgroundHighlight:     darken(@btnInverseBackground, 3%);
 
 
 // Forms
