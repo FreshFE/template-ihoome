@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	$('.news-bar').affix({
 		offset: {
-			top: 1260,
+			top: 1210,
 			bottom: 10
 		}
 	});
