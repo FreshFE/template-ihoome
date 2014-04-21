@@ -49,12 +49,7 @@
 		}
 
 		a {
-			color: $grayLight;
 			font-size: 12px;
-			text-decoration: none;
-			&:hover {
-				color: $green;
-			}
 		}
 
 		&:nth-child(even) {
