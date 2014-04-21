@@ -1,0 +1,51 @@
+.menu {
+	@include clearfix();
+}
+
+.menu-dropdown {
+	position: relative;
+	width: 200px;
+	height: 36px;
+	float: left;
+}
+
+.menu-dropdown-heading {
+	display: block;
+	width: 160px;
+	height: 22px;
+	background: $green;
+	color: #fff;
+	padding: 9px 20px;
+	i {
+		float: right;
+	}
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+		background: darken($green, 5%);
+	}
+}
+
+.menu-nav {
+	border: solid 1px $grayLighter;
+	border-left: none;
+	border-bottom: solid 3px $green;
+	margin-left: 200px;
+	@include clearfix();
+	> li {
+		float: left;
+	}
+	> li > a {
+		padding: 8px 20px;
+		color: $gray;
+	}
+	> .active > a {
+		&,
+		&:hover,
+		&:active {
+			background: #ddd;
+			font-weight: bold;
+			color: $green;
+		}
+	}
+}
