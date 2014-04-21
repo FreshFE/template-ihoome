@@ -91,7 +91,6 @@
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: $dropdownLinkColorHover;
-  @include gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
 }
 
 // Active state
@@ -102,7 +101,6 @@
   color: $dropdownLinkColorActive;
   text-decoration: none;
   outline: 0;
-  @include gradient-vertical($dropdownLinkBackgroundActive, darken($dropdownLinkBackgroundActive, 5%));
 }
 
 // Disabled state
