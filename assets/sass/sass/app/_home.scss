@@ -1,0 +1,17 @@
+.home-carousel-info {
+	padding: 10px 0;
+	border-bottom: solid 1px $borderGray;
+	margin-bottom: 20px;
+
+	.span3 {
+		border-left: solid 1px $borderGray;
+		width: 270px;
+		margin-left: 14px;
+		padding-left: 15px;
+
+		&:first-child {
+			margin-left: 15px;
+			border-left: none;
+		}
+	}
+}
