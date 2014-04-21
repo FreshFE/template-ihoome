@@ -71,3 +71,17 @@
 		line-height: 23px;
 	}
 }
+
+.news-bar {
+	width: 170px;
+}
+
+.news-bar.affix {
+	top: 120px;
+}
+
+.news-bar.affix-bottom {
+	position: absolute;
+	top: auto;
+	bottom: 10px;
+}
