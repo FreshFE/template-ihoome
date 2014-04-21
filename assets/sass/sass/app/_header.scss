@@ -1,0 +1,46 @@
+.header {
+
+}
+
+.header-brand {
+	display: block;
+	float: left;
+	width: 180px;
+	margin-right: 40px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.header-nav {
+	float: left;
+	padding: 20px 0;
+
+	> li {
+		float: left;
+		font-size: 20px;
+
+		> a {
+			padding: 15px 20px;
+		}
+	}
+
+	> li > a {
+		&:hover,
+		&:active {
+			background: transparent;
+		}
+	}
+}
+
+.header-search {
+	float: right;
+	padding: 30px 0;
+
+	.search-query {
+		background: #e6eaed;
+		border: solid 1px #dce0e3;
+		@include box-shadow(none);
+	}
+}
