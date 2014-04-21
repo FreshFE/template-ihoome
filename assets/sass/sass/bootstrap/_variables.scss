@@ -43,8 +43,8 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkColor:             $green !default;
-$linkColorHover:        darken($linkColor, 15%) !default;
+$linkColor:             $grayLight !default;
+$linkColorHover:        $green !default;
 
 
 // Typography
@@ -133,7 +133,7 @@ $dropdownLinkColor:             $grayDark !default;
 $dropdownLinkColorHover:        $white !default;
 $dropdownLinkColorActive:       $white !default;
 
-$dropdownLinkBackgroundActive:  $linkColor !default;
+$dropdownLinkBackgroundActive:  $green !default;
 $dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;
 
 
