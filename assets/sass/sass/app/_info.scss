@@ -1,0 +1,50 @@
+.info {
+	border: solid 1px $borderGray;
+	margin-bottom: 20px;
+}
+
+.info-heading {
+	height: 34px;
+	border-bottom: solid 1px $borderGray;
+	padding: 0 10px;
+	@include clearfix();
+	h2 {
+		float: left;
+		padding: 0;
+		margin: 0;
+		font-size: 16px;
+		line-height: 34px;
+	}
+	.actions {
+		float: right;
+		line-height: 34px;
+	}
+	.nav-tabs {
+		float: left;
+		border: none;
+		> li {
+			margin: 0;
+		}
+		> li > a {
+			&,
+			&:hover,
+			&:active {
+				border: none;
+				background: transparent;
+				padding: 7px;
+			}
+		}
+		> .active > a {
+			&,
+			&:hover,
+			&:active {
+				color: $green;
+				border-bottom: solid 3px $green;
+			}
+		}
+	}
+}
+
+.info-body {
+	min-height: 300px;
+}
