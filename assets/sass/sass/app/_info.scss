@@ -7,6 +7,7 @@
 	height: 34px;
 	border-bottom: solid 1px $borderGray;
 	padding: 0 10px;
+	margin-bottom: 2px;
 	@include clearfix();
 	h2 {
 		float: left;
@@ -22,6 +23,8 @@
 	.nav-tabs {
 		float: left;
 		border: none;
+		margin-bottom: 0;
+		@include clearfix();
 		> li {
 			margin: 0;
 		}
