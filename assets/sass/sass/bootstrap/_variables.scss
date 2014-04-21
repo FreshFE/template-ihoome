@@ -22,9 +22,11 @@ $white:                 #fff !default;
 // -------------------------
 $blue:                  #049cdb !default;
 $blueDark:              #0064cd !default;
-$green:                 #46a546 !default;
-$red:                   #9d261d !default;
-$yellow:                #ffc40d !default;
+$green:                 #07A685 !default;	// update
+$greenLight:			#40D992 !default;	// new
+$greenYellow:			#CCF298 !default;	// new
+$red:                   #FF0D5E !default;	// update
+$yellow:                #F7E8AA !default;	// update
 $orange:                #f89406 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
@@ -38,7 +40,7 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
+$linkColor:             $green !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
@@ -85,26 +87,26 @@ $tableBorder:                       #ddd !default; // table and cell border
 // Buttons
 // -------------------------
 $btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
+$btnBackgroundHighlight:            darken($btnBackground, 3%) !default;
 $btnBorder:                         #ccc !default;
 
-$btnPrimaryBackground:              $linkColor !default;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+$btnPrimaryBackground:              $green !default;
+$btnPrimaryBackgroundHighlight:     darken($btnPrimaryBackground, 1%) !default;
 
 $btnInfoBackground:                 #5bc0de !default;
-$btnInfoBackgroundHighlight:        #2f96b4 !default;
+$btnInfoBackgroundHighlight:        darken($btnInfoBackground, 1%) !default;
 
-$btnSuccessBackground:              #62c462 !default;
-$btnSuccessBackgroundHighlight:     #51a351 !default;
+$btnSuccessBackground:              $green !default;
+$btnSuccessBackgroundHighlight:     darken($btnSuccessBackground, 1%) !default;
 
-$btnWarningBackground:              lighten($orange, 15%) !default;
+$btnWarningBackground:              lighten($orange, 3%) !default;
 $btnWarningBackgroundHighlight:     $orange !default;
 
 $btnDangerBackground:               #ee5f5b !default;
-$btnDangerBackgroundHighlight:      #bd362f !default;
+$btnDangerBackgroundHighlight:      darken($btnDangerBackground, 3%) !default;
 
 $btnInverseBackground:              #444 !default;
-$btnInverseBackgroundHighlight:     $grayDarker !default;
+$btnInverseBackgroundHighlight:     darken($btnInverseBackground, 3%) !default;
 
 
 // Forms
