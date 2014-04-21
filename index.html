@@ -176,24 +176,87 @@
 				
 				<div class="info">
 					<div class="info-heading">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#">1号线</a></li>
-							<li><a href="#">2号线</a></li>
+						<ul class="nav nav-tabs nav-tabs-toggle">
+							<li class="active"><a href="#line1">1号线</a></li>
+							<li><a href="#line2">2号线</a></li>
 						</ul>
 						<div class="actions">
-							<a href="#">更多苏州热盘</a>
+							<a href="#">更多</a>
 						</div>
 					</div>
-					<div class="info-body">
-
+					<div class="info-body tab-content">
+						<div class="tab-pane active" id="line1">1</div>
+						<div class="tab-pane" id="line2">2</div>
 					</div>
+				</div>
+
+				<div class="info">
+					<div class="info-heading">
+						<h2 class="info-title">热点新盘推荐</h2>
+						<div class="actions">
+							<a href="#">更多</a>
+						</div>
+					</div>
+					<div class="info-body"></div>
 				</div>
 			</div>
 			<div class="span3">
-				侧边栏
+				<div class="widget">
+					<img data-src="holder.js/270x120">
+				</div>
+
+				<div class="info">
+					<div class="info-heading">
+						<ul class="nav nav-tabs nav-tabs-toggle">
+							<li class="active"><a href="#news">资讯</a></li>
+							<li><a href="#guide">导购</a></li>
+							<li><a href="#activity">动态</a></li>
+						</ul>
+					</div>
+					<div class="info-body"></div>
+				</div>
+
+				<div class="info">
+					<div class="info-heading">
+						<h2 class="info-title">购房百科</h2>
+						<div class="actions">
+							<a href="#">更多</a>
+						</div>
+					</div>
+					<div class="info-body"></div>
+				</div>
+
+				<div class="info">
+					<div class="info-heading">
+						<ul class="nav nav-tabs nav-tabs-toggle">
+							<li class="active"><a href="#resoldhouse">二手房房价行情</a></li>
+							<li><a href="#newhouse">新房房价行情</a></li>
+						</ul>
+					</div>
+					<div class="info-body"></div>
+				</div>
+
+				<div class="info">
+					<div class="info-heading">
+						<h2 class="info-title">苏州房价走势</h2>
+						<div class="actions">
+							<p style="font-size: 10px;">本月均价: 13000元 ↑ 2%</p>
+						</div>
+					</div>
+					<div class="info-body"></div>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.nav-tabs-toggle a').click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+			});
+		});
+	</script>
 
 </body>
 </html>
